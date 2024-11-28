@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Sign In
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #1c1c1c;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 300px;
+        }
+
+        .container img {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+
+        .container h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .container input[type="email"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .container button:hover {
+            background-color: #0056b3;
+        }
+
+        .container .or {
+            color: #ffffff;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .container .or::before,
+        .container .or::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background-color: #333;
+        }
+
+        .container .or::before {
+            left: 0;
+        }
+
+        .container .or::after {
+            right: 0;
+        }
+
+        .container .social-icons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .container .social-icons a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container .social-icons a img {
+            width: 20px;
+        }
+
+        .container .create-account {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .container .create-account:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img alt="Epic Games Logo" height="50"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/2560px-Mario_Series_Logo.svg.png"
+            width="50" />
+        <h2>
+            Sign In
+        </h2>
+        <form action="/login" method="POST">
+            <input name="email" placeholder="Email Address" type="email" required />
+            <div style="position: relative;">
+                <input name="password" placeholder="Password" type="password" required />
+                <i class="fas fa-eye"
+                    style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #888; cursor: pointer;">
+                </i>
+            </div>
+            <button type="submit">SIGN IN</button>
+        </form>
+    </div>
+
+    
+    
+</body>
+
+</html>
